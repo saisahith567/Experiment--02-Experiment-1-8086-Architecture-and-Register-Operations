@@ -72,7 +72,8 @@ F1 = (!A & B & C)
 Inputs: A, B, C, D
 Output: F1
 Challenge: Simplify the expression and compare gate counts.
-![Uploading 11111111111685879863-9c88aa00-eb84-4c9d-a3b4-1df19f5deb8a.png…]()
+![Uploading 11111111111685879863-9c88aa00-eb84-4c9d-a3b4-1df19f5deb8a.png…]()<img width="2494" height="1452" alt="image" src="https://github.com/user-attachments/assets/c1103481-a11c-43fb-a7a9-1a269760f136" />
+
 
 
 Equation 2: Product-of-Sums Circuit
@@ -97,7 +98,8 @@ F3 = !(
 Inputs: A, B, C, D
 Output: F3
 Challenge: Apply De Morgan's theorems and implement the circuit using NAND and NOR gates.
-![Uploading 333333333333685901081-84848645-d452-4ee2-b63e-1a7858ecb69b.jpeg…]()
+![Uploading 333333333333685901081-84848645-d452-4ee2-b63e-1a7858ecb69b.jpeg…]()<img width="1075" height="672" alt="image" src="https://github.com/user-attachments/assets/4d131a7d-2b98-4936-aa48-02dc69f83c9a" />
+
 
 Equation 4: XOR-XNOR Combinational Circuit
 
@@ -107,7 +109,8 @@ F4 = ((A XOR B) & (C XNOR D))
 Inputs: A, B, C, D
 Output: F4
 Challenge: Compare an XOR/XNOR implementation with a basic-gate implementation.
-![Uploading 4444444444444444685900632-c21f6ccd-7911-47a9-86dc-6ab5763df564.jpeg…]()
+![Uploading 4444444444444444685900632-c21f6ccd-7911-47a9-86dc-6ab5763df564.jpeg…]()<img width="1073" height="572" alt="image" src="https://github.com/user-attachments/assets/65a10653-b5f9-4976-8f18-fb37819cdd6e" />
+
 
 Equation 5: Five-Input Logic Function
 
