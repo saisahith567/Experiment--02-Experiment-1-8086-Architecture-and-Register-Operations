@@ -1,4 +1,4 @@
-# Experiment--02-Experiment-1-8086-Architecture-and-Register-Operations
+# Experiment--2-Experiment-1-8086-Architecture-and-Register-Operations
  
 ## Aim
 
@@ -49,157 +49,6 @@ general-purpose registers AX, BX, CX, and DX, which can be accessed as
 DI. - Contains the Flag Register, which records status and control
 flags. - Requests the BIU to perform memory and I/O transfers when
 required.
-
-2. Boolean Notation
-
-Use the following notation throughout this experiment:
-Symbol 	Meaning 	Example
-!A 	NOT A 	!A
-A & B 	AND 	A & B
-A | B 	OR 	A | B
-A ^ B 	XOR 	A ^ B
-A XNOR B 	XNOR 	A XNOR B
-
-Important: In these equations, ! means NOT, & means AND, | means OR, and ^ means XOR. Parentheses determine the order of operations.
-3. Advanced Boolean Equations
-Equation 1: Four-Input Sum-of-Products
-
-F1 = (!A & B & C)
-   | (A & B & !D)
-   | (!B & C & D)
-   | (A & !C & D)
-
-Inputs: A, B, C, D
-Output: F1
-Challenge: Simplify the expression and compare gate counts.
-![Uploading 11111111111685879863-9c88aa00-eb84-4c9d-a3b4-1df19f5deb8a.png…]()<img width="2494" height="1452" alt="image" src="https://github.com/user-attachments/assets/c1103481-a11c-43fb-a7a9-1a269760f136" />
-
-
-
-Equation 2: Product-of-Sums Circuit
-
-F2 = (A | !B | C)
-   & (!A | B | D)
-   & (B | !C | !D)
-
-Inputs: A, B, C, D
-Output: F2
-Challenge: Implement the circuit using NAND gates and verify functional equivalence.
-<img width="1600" height="881" alt="22222222222222685898037-554f99ce-d55f-413f-af32-56938bd142e9" src="https://github.com/user-attachments/assets/78d2135e-a7e5-4a95-a93e-611e963ace5a" />
-
-Equation 3: Nested Complement Logic
-
-F3 = !(
-       ((! (A | B)) | (C & D))
-       &
-       (A | (!(B | C)))
-     )
-
-Inputs: A, B, C, D
-Output: F3
-Challenge: Apply De Morgan's theorems and implement the circuit using NAND and NOR gates.
-![Uploading 333333333333685901081-84848645-d452-4ee2-b63e-1a7858ecb69b.jpeg…]()<img width="1075" height="672" alt="image" src="https://github.com/user-attachments/assets/4d131a7d-2b98-4936-aa48-02dc69f83c9a" />
-
-
-Equation 4: XOR-XNOR Combinational Circuit
-
-F4 = ((A XOR B) & (C XNOR D))
-   | (!A & B & (C XOR D))
-
-Inputs: A, B, C, D
-Output: F4
-Challenge: Compare an XOR/XNOR implementation with a basic-gate implementation.
-![Uploading 4444444444444444685900632-c21f6ccd-7911-47a9-86dc-6ab5763df564.jpeg…]()<img width="1073" height="572" alt="image" src="https://github.com/user-attachments/assets/65a10653-b5f9-4976-8f18-fb37819cdd6e" />
-
-
-Equation 5: Five-Input Logic Function
-
-F5 = (A & B & !C)
-   | (!A & D & E)
-   | (B & C & !E)
-   | (!B & C & D)
-
-Inputs: A, B, C, D, E
-Output: F5
-Challenge: Generate and verify all 32 input combinations.
-Equation 6: Six-Input Mixed Logic
-
-F6 = ((A | B) & !(C | D))
-   | ((C XOR E) & (D | G))
-   | (!A & B & E)
-
-Inputs: A, B, C, D, E, G
-Output: F6
-Challenge: Calculate gate count and logic depth. Verify all 64 input combinations.
-Equation 7: NAND-NOR Hybrid Logic
-
-F7 = (! (A & B) & !(C | D))
-   | (!(A | C) & B & D)
-
-Inputs: A, B, C, D
-Output: F7
-Challenge: Implement the function using NAND and NOR gates with any required input inversions.
-Equation 8: Six-Input Advanced Combinational Logic
-
-F8 = ((A XOR B) & (C XNOR D))
-   | (!(A | B) & C & E)
-   | (A & B & !(D | F))
-
-Inputs: A, B, C, D, E, F
-Output: F8
-Challenge: Simplify the expression, design the circuit, and verify all 64 input combinations.
-4. Experimental Procedure
-
-    Identify all input variables and the output.
-    Draw the logic circuit for each equation.
-    Implement the circuit in Logisim Evolution, Proteus, or a digital logic trainer kit.
-    Apply all possible input combinations.
-    Record the expected and observed outputs.
-    Simplify the Boolean expression using Boolean algebra.
-    Build the simplified circuit and compare gate counts.
-    Save the circuit diagrams, truth tables, and verification screenshots.
-
-5. Truth Table Requirements
-Number of inputs 	Required combinations
-4 	16
-5 	32
-6 	64
-
-Use this format to record the results:
-Inputs 	Expected output 	Observed output 	Status
-0000 			
-0001 			
-0010 			
-... 			
-
-Extend the table to include every input combination required by each equation.
-6. Performance Analysis
-
-For each circuit, record:
-
-    Number of AND gates
-    Number of OR gates
-    Number of NOT gates
-    Number of XOR/XNOR gates
-    Total gate count
-    Logic depth
-    Functional equivalence before and after simplification
-
-7. Expected Results
-
-The eight Boolean functions should be implemented successfully. Their outputs should match the theoretical truth tables for all input combinations.
-8. Result
-
-The logic circuits are designed, implemented, and verified using Boolean algebra and digital logic gates. The original and simplified circuits are compared based on gate count and logic depth.
-9. Repository Structure
-
-EXPERIMENT-01-BUILDING-LOGICAL-CIRCUITS/
-├── README.md
-├── circuit_diagrams/
-├── truth_tables/
-├── simulation_files/
-└── results/
-
 
 ### Simplified Block Diagram
 
@@ -290,6 +139,8 @@ END MAIN
 -   AX = `1234H`
 -   BX = `1234H`
 -   RESULT = `1234H`
+-   <img width="1302" height="685" alt="image" src="https://github.com/user-attachments/assets/21763e3c-fa38-45cb-9721-89d4442d11fa" />
+
 
 ### Explanation
 
@@ -297,6 +148,7 @@ END MAIN
 AX. `MOV RESULT, BX` stores the contents of BX in the 16-bit memory
 variable `RESULT`. The `MOV` instruction does not modify the source
 operand.
+
 
 ------------------------------------------------------------------------
 
@@ -316,7 +168,25 @@ Write an 8086 assembly language program to exchange the contents of two
 5.  Stop the program.
 
 ### Assembly Program
+.MODEL SMALL
+.STACK 100H
 
+.DATA
+    VALUE1 DW 1111H
+    VALUE2 DW 2222H
+
+.CODE
+    MOV AX, @DATA
+    MOV DS, AX
+
+    MOV AX, VALUE1      ; AX = 1111H
+    MOV BX, VALUE2      ; BX = 2222H
+    MOV VALUE1, BX      ; VALUE1 = 2222H
+    MOV VALUE2, AX      ; VALUE2 = 1111H
+
+    MOV AH, 4CH
+    INT 21H
+END
  
 
 ### Expected Result
@@ -327,6 +197,9 @@ Write an 8086 assembly language program to exchange the contents of two
   VALUE2                       `2222H`           `1111H`
 
 ### Explanation
+This program exchanges the contents of two 16-bit memory locations, VALUE1 and VALUE2, using the AX and BX registers as temporary storage.
+
+Why registers are needed: The 8086 does not allow a MOV directly from one memory location to another. The values must first be loaded into registers, and then written back to the opposite locations.
 
   
 ------------------------------------------------------------------------
@@ -342,9 +215,7 @@ Write an 8086 assembly language program to exchange the contents of two
 7.  Record the observed results and compare them with the expected
     results.
 ## Screenshot of the results 
-<img width="959" height="498" alt="Screenshot 2026-10-27 135929" src="https://github.com/user-attachments/assets/50cdfb2a-2cdb-4253-829e-5786ff6ef977" />
-<img width="956" height="500" alt="Screenshot 2026-10-27 140028" src="https://github.com/user-attachments/assets/a8724690-8694-4ad3-bb02-5aaac86085de" />
-<img width="959" height="500" alt="Screenshot 2026-10-27 140101" src="https://github.com/user-attachments/assets/b136857c-ce90-4cc2-b1e2-497ca254133b" />
+<img width="1314" height="687" alt="image" src="https://github.com/user-attachments/assets/170bffaa-6f20-4861-b503-75698b3f3660" />
 
 
 
